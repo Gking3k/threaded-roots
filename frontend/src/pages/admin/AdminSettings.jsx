@@ -65,25 +65,6 @@ function AdminSettings() {
         getStoreSettings(),
         getPaymentInfo(),
 
-        fetch(
-          `${
-            import.meta.env.VITE_API_URL ||
-            "http://localhost:5000/api"
-          }/settings/payment-info`
-        ).then(
-          async (response) => {
-            const data =
-              await response.json();
-
-            if (!response.ok) {
-              throw new Error(
-                data.message
-              );
-            }
-
-            return data;
-          }
-        ),
       ]);
 
       setSettings({
