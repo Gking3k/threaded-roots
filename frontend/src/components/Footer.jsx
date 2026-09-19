@@ -64,9 +64,15 @@ function Footer() {
 
       <div className="footer-bottom">
         <p>
-          © {new Date().getFullYear()}{" "}
-          {storeConfig.name}. All
-          rights reserved.
+          © {new Date().getFullYear()} {storeConfig.name}. All rights reserved.
+          Designed & Developed by{" "}
+          <a
+            href="https://portfolio-website-tau-flax-17.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            G3 Web Studio
+          </a>
         </p>
       </div>
     </footer>
